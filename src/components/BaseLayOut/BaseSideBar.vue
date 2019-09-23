@@ -1,14 +1,8 @@
 <template>
-  <div class="mdui-drawer">
-    <ul class="nav-item mdui-list">
-      <li>
-        <a class="mdui-list-item mdui-ripple">foo</a>
-      </li>
-      <li>
-        <a class="mdui-list-item mdui-ripple">foo</a>
-      </li>
-      <li>
-        <a class="mdui-list-item mdui-ripple">foo</a>
+  <div>
+    <ul class="mdui-list">
+      <li v-for="(value,key) in lists" :key="key">
+        <router-link class="mdui-list-item mdui-ripple" :to="{path:value.path}">{{value.name}}</router-link>
       </li>
     </ul>
   </div>
@@ -16,22 +10,22 @@
 
 <script>
 export default {
-  name: "BaseSideBar"
+  name: "BaseSideBar",
+  props: {
+    lists: {
+      type: Array,
+      default: ""
+    }
+  }
 };
 </script>
 
 <style>
-.mdui-drawer {
-  top: 64px;
-}
 ul,
 li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.mdui-list-item{
-    padding-left: 72px;
-    font-size: 15px
-}
+
 </style>
