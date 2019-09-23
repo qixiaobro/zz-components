@@ -1,5 +1,5 @@
 <template>
-  <div class="mdui-container-fluid">
+  <div>
     <div>基础:</div>
     <div class="mdui-row" style="margin-top:10px;margin-bottom:10px;">
       <div class="mdui-col-xs-1">

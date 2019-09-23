@@ -1,15 +1,16 @@
 <template>
-<div class="mdui-appbar">
-  <div class="mdui-toolbar mdui-color-theme">
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="options"><i class="mdui-icon material-icons">menu</i></a>
-    <a href="javascript:;" class="mdui-typo-headline">ZMDV</a>
-    <a href="javascript:;" class="mdui-typo-title">示例</a>
-    <div class="mdui-toolbar-spacer"></div>
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
-  </div>
-</div>
+    <header class="mdui-appbar mdui-appbar-fixed">
+      <div class="mdui-toolbar mdui-color-theme">
+        <span
+          class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+          mdui-drawer="{target: '#main-drawer', swipe: true}"
+        >
+          <i class="mdui-icon material-icons">menu</i>
+        </span>
+        <a href="../" class="mdui-typo-headline mdui-hidden-xs">MDUI</a>
+        <a href="./" class="mdui-typo-title">文档</a>
+      </div>
+    </header>
 </template>
 
 <script>
