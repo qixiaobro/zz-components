@@ -8,7 +8,7 @@
         >
           <i class="mdui-icon material-icons">menu</i>
         </span>
-        <a href="../" class="mdui-typo-headline mdui-hidden-xs">ZDUI</a>
+        <a href="../" class="mdui-typo-headline mdui-hidden-xs"></a>
       </div>
     </header>
 
@@ -86,6 +86,6 @@ li {
   margin: 0;
   list-style: none;
   text-align: center;
-  margin-left: ;
+  /* margin-left: ; */
 }
 </style>
