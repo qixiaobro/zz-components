@@ -4,7 +4,7 @@
     <h4>基础:</h4>
     <div class="mdui-row" style="margin-top:10px;margin-bottom:10px;">
       <div class="mdui-col-xs-12 mdui-col-sm-12 mdui-col-md-12" style="margin:5px 0;">
-        <z-input placeholder="默认输入框" v-model="s"></z-input>
+        <z-input placeholder="默认输入框" v-model="s" type="password"></z-input>
         {{s}}
       </div>
       <div class="mdui-col-xs-12 mdui-col-sm-12 mdui-col-md-12" style="margin:5px 0;">

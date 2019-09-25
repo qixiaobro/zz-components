@@ -16,7 +16,11 @@
       <div class="mdui-list" style="margin-bottom: 76px;">
         <ul>
           <li v-for="(value,key) in lists" :key="key">
-            <router-link class="mdui-list-item mdui-ripple" style="padding-left:76px" :to="{path:value.path}">{{value.name}}</router-link>
+            <router-link
+              class="mdui-list-item mdui-ripple"
+              style="padding-left:76px"
+              :to="{path:value.path}"
+            >{{value.name}}</router-link>
           </li>
         </ul>
       </div>
@@ -54,6 +58,14 @@ export default {
         },
         {
           name: "Checkbox多选框"
+        },
+        {
+          name: "testVue",
+          path: "test"
+        },
+        {
+          name: "form表单验证",
+          path: "ExForm"
         }
       ],
       open: true

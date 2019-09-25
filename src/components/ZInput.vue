@@ -25,11 +25,15 @@
 <script>
 export default {
   name: "ZInput",
-  model:{
-      prop:'value',
-      event:'input'
+  model: {
+    prop: "value",
+    event: "input"
   },
   props: {
+    value: {
+      type: String,
+      default:""
+    },
     type: {
       type: String,
       default: "text"
@@ -76,9 +80,7 @@ export default {
     }
   },
   data() {
-      return{
-          value:'',
-      }
+    return {};
   }
 };
 </script>
