@@ -5,6 +5,7 @@ import ExButton from '@/pages/ExButton'
 import ExInput from '@/pages/ExInput'
 import test from '@/pages/test'
 import ExForm from '@/pages/ExForm'
+import proinj from '@/pages/proinj'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
         name: 'ExForm',
         component: ExForm,
       },
+      {
+        path: 'proinj',
+        name: 'proinj',
+        component: proinj,
+      }
     ]
   }]
 })

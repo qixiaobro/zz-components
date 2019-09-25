@@ -59,29 +59,24 @@ export default {
         {
           name: "Checkbox多选框"
         },
-        {
-          name: "testVue",
-          path: "test"
-        },
+        // {
+        //   name: "testVue",
+        //   path: "test"
+        // },
         {
           name: "form表单验证",
           path: "ExForm"
+        },
+        {
+          name: "provide/inject",
+          path: "proinj"
         }
       ],
-      open: true
     };
   },
   methods: {
-    openDrawer() {
-      if (this.open) {
-        document.getElementById("drawer").className = "";
-      } else {
-        document.getElementById("drawer").className = "mdui-drawer-body-left";
-      }
-      this.open = !this.open;
-    }
   },
-  mounted: {
+  mounted() {
     // let inst = new mdui.Drawer(selector, options);
   }
 };
